@@ -50,7 +50,7 @@ const char *LoLogs::GetCurDateTimeWithString(char *pStringBuf)
 	time(&tCurDateTime);
 	ptagCurDataTime = localtime(&tCurDateTime);
 
-	sprintf(pWriteStringBuf, "%d-%02d-%02d %02d:%02d:%02d",
+	sprintf(pWriteStringBuf, "[%d-%02d-%02d %02d:%02d:%02d]",
 		ptagCurDataTime->tm_year + 1900,
 		ptagCurDataTime->tm_mon + 1,
 		ptagCurDataTime->tm_mday,
