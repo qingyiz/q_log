@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int i = 0;
+	/*
 	LoLogs::WriteLog(LOGTYPE_WARNING,"%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
 	LoLogs::WriteLog(LOGTYPE_WARNING,"editor : first log sys\n");
 	LoLogs::WriteLog(LOGTYPE_WARNING,"email  : qingyizhu12138@163.com\n");
@@ -25,7 +25,27 @@ int main()
 	LoLogs::WriteLog(LOGTYPE_FATAL,"%s,%s,%s,%d\n","author : qingyizhg","this is fatal log test",__FILE__,__LINE__);
 	LoLogs::WriteLog(LOGTYPE_FATAL,"editor : first log sys\n");
 	LoLogs::WriteLog(LOGTYPE_FATAL,"email  : qingyizhu12138@163.com\n");
-	while(1);
+	*/
+	Q_WAR("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_WAR("editor : first log sys\n");
+	Q_WAR("email  : qingyizhu12138@163.com\n");
+
+	Q_INF("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_INF("editor : first log sys\n");
+	Q_INF("email  : qingyizhu12138@163.com\n");
+
+	Q_DEB("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_DEB("editor : first log sys\n");
+	Q_DEB("email  : qingyizhu12138@163.com\n");
+
+	Q_FAT("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_FAT("editor : first log sys\n");
+	Q_FAT("email  : qingyizhu12138@163.com\n");
+
+	Q_TRA("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_TRA("editor : first log sys\n");
+	Q_TRA("email  : qingyizhu12138@163.com\n");
+	
 #ifdef WIN32
 	system("pause");
 #endif
