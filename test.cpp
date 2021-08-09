@@ -38,14 +38,14 @@ int main()
 	Q_DEB("editor : first log sys\n");
 	Q_DEB("email  : qingyizhu12138@163.com\n");
 
-	Q_FAT("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
-	Q_FAT("editor : first log sys\n");
-	Q_FAT("email  : qingyizhu12138@163.com\n");
+	Q_ERR("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
+	Q_ERR("editor : first log sys\n");
+	Q_ERR("email  : qingyizhu12138@163.com\n");
 
 	Q_TRA("%s,%s,%s,%d\n","author : qingyizhg","this is warning log test",__FILE__,__LINE__);
 	Q_TRA("editor : first log sys\n");
 	Q_TRA("email  : qingyizhu12138@163.com\n");
-	
+
 #ifdef WIN32
 	system("pause");
 #endif
