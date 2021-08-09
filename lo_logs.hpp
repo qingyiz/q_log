@@ -34,7 +34,7 @@
 #define LOGTYPE_WARNING			0
 #define LOGTYPE_INFO			1
 #define LOGTYPE_DEBUG			2
-#define LOGTYPE_FATAL			3
+#define LOGTYPE_ERROR			3
 #define LOGTYPE_TRACE			4
 
 #define Q_WAR(fmt, args...) ({printf(COLOR_YELLOW"[WAR]:%s[%d]: "COLOR_NONE, __FUNCTION__,__LINE__);printf(fmt, ##args);\
@@ -46,8 +46,8 @@
 #define Q_DEB(fmt, args...) ({printf(COLOR_GREEN"[DEB]:%s[%d]: "COLOR_NONE, __FUNCTION__,__LINE__);printf(fmt, ##args);\
 								LoLogs::WriteLog(LOGTYPE_DEBUG,fmt,##args);\
 								})
-#define Q_FAT(fmt, args...) ({printf(COLOR_RED"[FAT]:%s[%d]: "COLOR_NONE, __FUNCTION__,__LINE__);printf(fmt, ##args);\
-								LoLogs::WriteLog(LOGTYPE_FATAL,fmt,##args);\
+#define Q_ERR(fmt, args...) ({printf(COLOR_RED"[ERR]]:%s[%d]: "COLOR_NONE, __FUNCTION__,__LINE__);printf(fmt, ##args);\
+								LoLogs::WriteLog(LOGTYPE_ERROR,fmt,##args);\
 								})
 #define Q_TRA(fmt, args...) ({printf(COLOR_CYAN"[TRA]:%s[%d]: "COLOR_NONE, __FUNCTION__,__LINE__);printf(fmt, ##args);\
 								LoLogs::WriteLog(LOGTYPE_TRACE,fmt,##args);\
