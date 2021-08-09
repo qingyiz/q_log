@@ -16,7 +16,7 @@ static Mutex m_gLogMutex(0);
 FILE *LoLogs::m_fileSvrLog = NULL;
 int LoLogs::m_nFileStatus = FILESTATUS_CLOSE;
 
-const char * LoLogs::filename[5] = {"warning","info","debug","fatal","trace"};
+const char * LoLogs::filename[5] = {"warning","info","debug","error","trace"};
 
 
 LoLogs::LoLogs()
